@@ -132,3 +132,5 @@ dist
 .DS_Store
 .node_modules
 .vscode
+# Sentry Config File
+.env.sentry-build-plugin
