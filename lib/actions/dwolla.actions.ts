@@ -22,6 +22,7 @@ const dwollaClient = new Client({
 	key: process.env.DWOLLA_KEY as string,
 	secret: process.env.DWOLLA_SECRET as string,
 });
+console.log('dwollaClient in dwollaactionsts', dwollaClient);
 
 // Create a Dwolla Funding Source using a Plaid Processor Token
 export const createFundingSource = async (
