@@ -44,7 +44,7 @@ export const getTransactionsByBankId = async ({
 			TRANSACTION_COLLECTION_ID!,
 			[Query.equal('senderBankId', bankId)]
 		);
-		console.log('bankId in transactionactionsts', bankId);
+		// console.log('bankId in transactionactionsts', bankId);
 		console.log(
 			'senderTransactions in transactionactionsts',
 			senderTransactions

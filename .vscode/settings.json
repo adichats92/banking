@@ -1,6 +1,8 @@
 {
 	"cSpell.words": [
 		"Appwrite",
+		"bankactions",
+		"bankactionsts",
 		"banktab",
 		"chartjs",
 		"countup",
@@ -12,6 +14,7 @@
 		"Quentis",
 		"Seclected",
 		"sharaeble",
-		"stringifying"
+		"stringifying",
+		"transactionactionsts"
 	]
 }

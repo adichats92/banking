@@ -79,7 +79,7 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
 			bankId: bank.$id,
 		});
 		console.log(
-			'transferTransactionsData bankactionsts',
+			'transferTransactionsData in bankactionsts',
 			transferTransactionsData
 		);
 
@@ -142,6 +142,7 @@ export const getInstitution = async ({
 		});
 
 		const institution = institutionResponse.data.institution;
+		// console.log('institution in bankactions', institution);
 
 		return parseStringify(institution);
 	} catch (error) {
@@ -164,6 +165,8 @@ export const getTransactions = async ({
 			});
 
 			const data = response.data;
+
+			// console.log('data in bankactions', data);
 
 			transactions = response.data.added.map((transaction) => ({
 				id: transaction.transaction_id,
