@@ -158,6 +158,7 @@ declare interface HeaderBoxProps {
 
 declare interface MobileNavProps {
 	user: User;
+	mobileNav: boolean;
 }
 
 declare interface PageHeaderProps {
@@ -177,6 +178,7 @@ declare interface PlaidLinkProps {
 	user: User;
 	variant?: 'primary' | 'ghost';
 	dwollaCustomerId?: string;
+	mobileNav?: boolean;
 }
 
 // declare type User = sdk.Models.Document & {
@@ -222,6 +224,7 @@ declare interface RightSidebarProps {
 
 declare interface SidebarProps {
 	user: User;
+	mobileNav: boolean;
 }
 
 declare interface RecentTransactionsProps {

@@ -17,8 +17,9 @@ import { cn } from '@/lib/utils';
 import Footer from './Footer';
 import PlaidLink from './PlaidLink';
 
-const MobileNav = ({ user }: MobileNavProps) => {
+const MobileNav = ({ user, mobileNav }: MobileNavProps) => {
 	const pathname = usePathname();
+	mobileNav = true;
 	return (
 		<section className='w-full max-w-[264px]'>
 			<Sheet>
@@ -89,7 +90,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
 										</SheetClose>
 									);
 								})}
-								<PlaidLink user={user} />
+								<PlaidLink
+									user={user}
+									mobileNav={mobileNav}
+								/>
 							</nav>
 						</SheetClose>
 						<Footer

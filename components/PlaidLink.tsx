@@ -13,7 +13,7 @@ import {
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
-const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
+const PlaidLink = ({ user, variant, mobileNav }: PlaidLinkProps) => {
 	const router = useRouter();
 
 	const [token, setToken] = useState('');
@@ -68,9 +68,16 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 						alt='connect bank'
 						width={24}
 						height={24}
-						className={'brightness-[3] invert-[0]'}
 					/>
-					<p className='sidebar-label'>Connect bank</p>
+					<p
+						className={
+							mobileNav === false
+								? 'sidebar-label'
+								: 'text-[16px] font-semibold text-black-2'
+						}
+					>
+						Connect bank
+					</p>
 				</Button>
 			) : (
 				<Button
@@ -83,7 +90,15 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 						width={24}
 						height={24}
 					/>
-					<p className='sidebar-label'>Connect bank</p>
+					<p
+						className={
+							mobileNav === false
+								? 'sidebar-label'
+								: 'text-[16px] font-semibold text-black-2'
+						}
+					>
+						Connect bank
+					</p>
 				</Button>
 			)}
 		</>
