@@ -11,6 +11,7 @@ import {
 	exchangePublicToken,
 } from '@/lib/actions/user.actions';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 	const router = useRouter();
@@ -67,10 +68,9 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 						alt='connect bank'
 						width={24}
 						height={24}
+						className={'brightness-[3] invert-[0]'}
 					/>
-					<p className='hidden text-[16px] font-semibold text-black-2 xl:block'>
-						Connect bank
-					</p>
+					<p className='sidebar-label'>Connect bank</p>
 				</Button>
 			) : (
 				<Button
@@ -83,7 +83,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 						width={24}
 						height={24}
 					/>
-					<p className='text-[16px] font-semibold text-black-2'>Connect bank</p>
+					<p className='sidebar-label'>Connect bank</p>
 				</Button>
 			)}
 		</>

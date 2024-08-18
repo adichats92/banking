@@ -90,7 +90,7 @@ const AuthForm = ({ type }: { type: string }) => {
 					className='cursor-pointer flex items-center gap-1'
 				>
 					<Image
-						src='/icons/logo.svg'
+						src='/icons/qlogo.svg'
 						width={34}
 						height={34}
 						alt='Quentis logo'

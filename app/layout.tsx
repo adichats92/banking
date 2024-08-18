@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 	title: 'Quentis',
 	description: 'Quentis is a modern banking platform for everyone.',
 	icons: {
-		icon: '/icons/logo.svg',
+		icon: '/icons/qlogo.svg',
 	},
 };
 

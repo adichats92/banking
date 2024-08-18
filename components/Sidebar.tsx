@@ -18,7 +18,7 @@ const Sidebar = ({ user }: SidebarProps) => {
 					className='flex mb-12 cursor-pointer items-center gap-2'
 				>
 					<Image
-						src='/icons/logo.svg'
+						src='/icons/qlogo.svg'
 						width={34}
 						height={34}
 						alt='Quentis logo'

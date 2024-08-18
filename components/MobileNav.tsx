@@ -15,6 +15,7 @@ import { sidebarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Footer from './Footer';
+import PlaidLink from './PlaidLink';
 
 const MobileNav = ({ user }: MobileNavProps) => {
 	const pathname = usePathname();
@@ -39,7 +40,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
 						className='flex mb-12 cursor-pointer items-center gap-1 px-4'
 					>
 						<Image
-							src='/icons/logo.svg'
+							src='/icons/qlogo.svg'
 							width={34}
 							height={34}
 							alt='Quentis logo'
@@ -88,7 +89,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
 										</SheetClose>
 									);
 								})}
-								USER
+								<PlaidLink user={user} />
 							</nav>
 						</SheetClose>
 						<Footer
