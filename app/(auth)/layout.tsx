@@ -9,13 +9,14 @@ export default function RootLayout({
 		<main className='flex min-h-screen w-full justify-between font-inter'>
 			{children}
 			<div className='auth-asset'>
-				<div>
+				<div className='flex flex-col justify-center'>
 					<Image
-						src='/icons/auth-image.svg'
+						src='/icons/signin.png'
 						alt='Auth image'
-						width={500}
-						height={500}
+						width={800}
+						height={800}
 					/>
+					<div className='text-36 text-center'>Bank Smarter, Live Better.</div>
 				</div>
 			</div>
 		</main>
